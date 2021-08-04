@@ -5,14 +5,14 @@
 <h5 align="center">自动抓取tg频道、订阅地址、公开互联网上的ss、ssr、vmess、trojan节点信息，聚合去重测试可用性后提供节点列表</h5>
 
 <p align="center">
-  <a href="https://github.com/Sansui233/proxypool/actions">
-    <img src="https://img.shields.io/github/workflow/status/Sansui233/proxypool/Go?style=flat-square" alt="Github Actions">
+  <a href="https://github.com/Xyolan/proxypool/actions">
+    <img src="https://img.shields.io/github/workflow/status/Xyolan/proxypool/Go?style=flat-square" alt="Github Actions">
   </a>
-  <a href="https://goreportcard.com/report/github.com/Sansui233/proxypool">
-    <img src="https://goreportcard.com/badge/github.com/Sansui233/proxypool?style=flat-square">
+  <a href="https://goreportcard.com/report/github.com/Xyolan/proxypool">
+    <img src="https://goreportcard.com/badge/github.com/Xyolan/proxypool?style=flat-square">
   </a>
-  <a href="https://github.com/lanhebe/proxypool/releases">
-    <img src="https://img.shields.io/github/release/lanhebe/proxypool/all.svg?style=flat-square">
+  <a href="https://github.com/Xyolan/proxypool/releases">
+    <img src="https://img.shields.io/github/release/Xyolan/proxypool/all.svg?style=flat-square">
   </a>
 </p>
 
@@ -33,7 +33,7 @@
 以下五选一。
 ### 使用一键脚本安装到VPS  (Littleyu增加一键脚本安装功能，目前仅支持CentOS 7操作系统)
 ```sh
-wget https://raw.githubusercontent.com/lanhebe/proxypool/master/onekey_install.sh && chmod +x onekey_install.sh && ./onekey_install.sh
+wget https://raw.githubusercontent.com/Xyolan/proxypool/master/onekey_install.sh && chmod +x onekey_install.sh && ./onekey_install.sh
 ```
 
 ### 使用Heroku
@@ -44,7 +44,7 @@ wget https://raw.githubusercontent.com/lanhebe/proxypool/master/onekey_install.s
 
 > heroku app域名为appname.herokuapp.com。项目内配置文件为./config/config.yaml
 
-配置文件模板见 config/config.yaml 文件，可选项区域均可不填。完整配置选项请查看[配置文件说明](https://github.com/Sansui233/proxypool/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E)。
+配置文件模板见 config/config.yaml 文件，可选项区域均可不填。完整配置选项请查看[配置文件说明](https://github.com/Xyolan/proxypool/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E)。
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -56,7 +56,7 @@ wget https://raw.githubusercontent.com/lanhebe/proxypool/master/onekey_install.s
 需要安装Golang 
 
 ```sh
-$ go get -u -v github.com/lanhebe/proxypool
+$ go get -u -v github.com/Xyolan/proxypool
 ```
 
 运行
@@ -71,12 +71,12 @@ make
 
 ### 下载预编译程序
 
-从这里下载预编译好的程序 [release](https://github.com/lanhebe/proxypool/releases)。
+从这里下载预编译好的程序 [release](https://github.com/Xyolan/proxypool/releases)。
 
 ### 使用docker
 
 ```sh
-docker pull docker.pkg.github.com/lanhebe/proxypool/proxypool:latest
+docker pull docker.pkg.github.com/Xyolan/proxypool/proxypool:latest
 ```
 
 ## 使用
@@ -85,7 +85,7 @@ docker pull docker.pkg.github.com/lanhebe/proxypool/proxypool:latest
 
 ### 修改配置文件
 
-首先修改 config.yaml 中的必要配置信息。带有默认值的字段均可不填写。完整的配置选项见[配置文件说明](https://github.com/Sansui233/proxypool/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E)
+首先修改 config.yaml 中的必要配置信息。带有默认值的字段均可不填写。完整的配置选项见[配置文件说明](https://github.com/Xyolan/proxypool/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E)
 
 ### 启动程序
 
@@ -95,7 +95,7 @@ docker pull docker.pkg.github.com/lanhebe/proxypool/proxypool:latest
 proxypool -c ./config/config.yaml
 ```
 
-如果需要部署到VPS，更多细节请[查看wiki](https://github.com/Sansui233/proxypool/wiki/%E9%83%A8%E7%BD%B2%E5%88%B0VPS-Step-by-Step)。
+如果需要部署到VPS，更多细节请[查看wiki](https://github.com/Xyolan/proxypool/wiki/%E9%83%A8%E7%BD%B2%E5%88%B0VPS-Step-by-Step)。
 
 ## Clash配置文件
 
